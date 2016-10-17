@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (3.5.1)
+  - AlamofireImage (2.5.0):
+    - Alamofire (~> 3.5)
+  - AlamofireOauth2 (1.2.1):
+    - Alamofire
+    - KeychainAccess
+  - Crashlytics (3.8.3):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.10)
+  - iCarousel (1.8.2)
+  - KeychainAccess (2.3.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - AlamofireImage
+  - AlamofireOauth2
+  - Crashlytics
+  - Fabric
+  - iCarousel
+  - KeychainAccess (from `https://github.com/kishikawakatsumi/KeychainAccess.git`, tag `v2.3.6`)
+
+EXTERNAL SOURCES:
+  KeychainAccess:
+    :git: https://github.com/kishikawakatsumi/KeychainAccess.git
+    :tag: v2.3.6
+
+CHECKOUT OPTIONS:
+  KeychainAccess:
+    :git: https://github.com/kishikawakatsumi/KeychainAccess.git
+    :tag: v2.3.6
+
+SPEC CHECKSUMS:
+  Alamofire: 0dfba1184a543e2aa160f4e39cac4e8aba48d223
+  AlamofireImage: 2d34936e5201270bb17a316a786e90e83b4a249d
+  AlamofireOauth2: 88546b39472af7ef7e8bccd7d0367db607462eef
+  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  Fabric: c73f371ee543e3f0b80608f2674750e4910d1669
+  iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
+  KeychainAccess: 7f10e2ef998ddf954a64d5d608be08677774684d
+
+PODFILE CHECKSUM: 31bf6c29c282e01d6ca77b52ae6e09d3e2b93d35
+
+COCOAPODS: 1.0.1

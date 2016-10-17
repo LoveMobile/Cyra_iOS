@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15G31" minimumToolsVersion="Automatic">
+    <entity name="TTEntity" representedClassName=".TTEntity" syncable="YES">
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TTToken" representedClassName=".TTToken" parentEntity="TTEntity" syncable="YES">
+        <attribute name="accessToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expiresAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="expiresIn" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="scope" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TTUser" inverseName="token" inverseEntity="TTUser" syncable="YES"/>
+    </entity>
+    <entity name="TTUser" representedClassName=".TTUser" parentEntity="TTEntity" syncable="YES">
+        <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="token" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TTToken" inverseName="user" inverseEntity="TTToken" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TTEntity" positionX="-63" positionY="-18" width="128" height="58"/>
+        <element name="TTUser" positionX="-63" positionY="78" width="128" height="88"/>
+        <element name="TTToken" positionX="189" positionY="74" width="128" height="133"/>
+    </elements>
+</model>
